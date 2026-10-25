@@ -1,1 +1,77 @@
-Hello from Momo Kids Lab 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Momo Kids Lab</title>
+  <meta name="description" content="Momo Kids Lab makes friendly learning games for kids, starting with Momo Math Island.">
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --card: #ffffff;
+      --ink: #2b2a33;
+      --muted: #6b6878;
+      --accent: #ff8a5b;
+      --sea: #3fb6c6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1d1c24; --card: #282733; --ink: #f4f1ea; --muted: #b3afc0; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 2.6rem; margin: 0; letter-spacing: -0.02em; }
+    h1 span { color: var(--accent); }
+    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+      margin-bottom: 24px;
+    }
+    .card h2 { margin-top: 0; color: var(--sea); }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+    a { color: var(--sea); }
+    footer { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Momo <span>Kids</span> Lab</h1>
+      <p class="tagline">Friendly learning games for curious kids</p>
+    </header>
+
+    <section class="card">
+      <span class="badge">Coming soon</span>
+      <h2>Momo Math Island</h2>
+      <p>Join Momo on an island adventure where adding, subtracting and counting turn into play.
+        Momo Math Island is an Android game made for young learners, with no pressure and plenty of fun.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Questions or feedback? Email us at
+        <a href="mailto:momokidslab@gmail.com">momokidslab@gmail.com</a>.</p>
+    </section>
+
+    <footer>&copy; 2026 Momo Kids Lab</footer>
+  </main>
+</body>
+</html>
