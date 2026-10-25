@@ -6,8 +6,8 @@
 ## About Momo Math Island
 
 **Momo Math Island** is an educational mathematics game created by **Momo Kids Lab** for children and families.
-Momo Math Island is designed to make learning mathematics fun and engaging by combining basic math practice with interactive gameplay. The Game helps children practice and develop their counting skills, number recognition, and basic mathematics while having fun and progressing through the game.
-Through different levels, questions, challenges, and activities, children can practice mathematical skills such as counting, addition, subtraction, multiplication, division, and other age-appropriate math concepts.
+Momo Math Island is designed to make learning mathematics fun and engaging by combining basic math practice with interactive gameplay. The Game helps children practice and develop their counting, comparing, addition, and subtraction skills while having fun and progressing through the game.
+Through fun questions and activities, children can practice counting, comparing numbers, addition, and subtraction.
 
 Our goal is to give children a fun way to practice mathematics, build confidence with numbers, improve their basic math skills, and enjoy learning through play.
 
@@ -27,7 +27,7 @@ We do not sell or rent players' personal information to third parties.
 
 Momo Math Island is designed to be played offline, and an internet connection is not required for normal gameplay.
 
-Game progress, scores, unlocked levels, achievements, characters, and other game-related information may be stored locally on the player's device so that the Game can save and remember gameplay progress.
+Game progress, stars, collected stickers and rewards, settings, and other game-related information may be stored locally on the player's device so that the Game can save and remember gameplay progress.
 
 Locally stored gameplay information is not intentionally transmitted to Momo Kids Lab.
 
@@ -39,13 +39,13 @@ Momo Math Island is intended to be a **one-time purchase game**. Players are not
 
 The Game does not require subscriptions, recurring payments, gacha purchases, loot boxes, real-money virtual currency, pay-to-win purchases, or third-party advertising.
 
-Any purchase required to obtain the Game is processed through the applicable official app store, such as Google Play or the Apple App Store.
+Any purchase required to obtain the Game is processed through the applicable official app store, such as Google Play.
 
 Momo Kids Lab does not receive or store a player's credit-card or payment-card information through the Game. Payment processing is handled by the applicable platform according to its own privacy policy and terms.
 
 ## Advertising
 
-Momo Math Island does not intentionally display third-party advertisements during normal gameplay.
+Momo Math Island does not display third-party advertisements.
 
 We do not use the Game to create advertising profiles for children, and we do not sell or rent children's personal information to advertisers.
 
@@ -61,7 +61,7 @@ Parents and guardians are encouraged to supervise their children's use of mobile
 
 Although Momo Math Island is designed as an offline game, the platform used to download or purchase the Game may independently collect or process information.
 
-For example, Google Play, the Apple App Store, or the player's device manufacturer may process information relating to app purchases, downloads, devices, accounts, operating systems, updates, or platform services.
+For example, Google Play or the player's device manufacturer may process information relating to app purchases, downloads, devices, accounts, operating systems, updates, or platform services.
 
 Such information is handled by the applicable third party and is subject to that third party's privacy policy and terms.
 
@@ -115,9 +115,9 @@ We use this information only as reasonably necessary to respond to support reque
 
 ## Intellectual Property
 
-Momo Math Island and its original content are created and owned by **Momo Kids Lab**, except for third-party materials that may be subject to their respective rights or licenses.
+Momo Math Island and its original content are owned by or licensed to **Momo Kids Lab**, except for third-party materials, which remain subject to their respective rights and licenses. Some artwork was created with the help of AI tools.
 
-This includes, but is not limited to, the Momo Math Island name, Momo Kids Lab branding, original characters, character designs, artwork, illustrations, animations, logos, icons, user-interface designs, original educational content, mathematics learning materials, game content, story and dialogue, original music and sounds, original game design, and other original creative materials.
+This includes, but is not limited to, the Momo Math Island name, Momo Kids Lab branding, original characters, character designs, artwork, illustrations, visual effects, logos, icons, user-interface designs, original educational content, mathematics learning materials, game content, character dialogue and in-game text, original music and sounds, original game design, and other original creative materials.
 
 All applicable rights are reserved.
 
