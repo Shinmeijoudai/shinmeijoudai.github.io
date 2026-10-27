@@ -1,7 +1,7 @@
 # Momo Math Island Privacy Policy
 
-**Effective Date: November 27, 2026**  
-**Last Updated: November 27, 2026**
+**Effective Date: October 26, 2026**  
+**Last Updated: October 26, 2026**
 
 ## About Momo Math Island
 
