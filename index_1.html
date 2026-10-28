@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Momo Kids Lab</title>
+  <meta name="description" content="Momo Kids Lab makes friendly educational games where kids play and learn basic skills at the same time.">
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --card: #ffffff;
+      --ink: #2b2a33;
+      --muted: #6b6878;
+      --accent: #ff8a5b;
+      --sea: #3fb6c6;
+      --soft: #fff1e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1d1c24; --card: #282733; --ink: #f4f1ea; --muted: #b3afc0; --soft: #33313f; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 2.6rem; margin: 0; letter-spacing: -0.02em; }
+    h1 span { color: var(--accent); }
+    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+      margin-bottom: 24px;
+    }
+    .card h2 { margin-top: 0; color: var(--sea); }
+    .section-title { font-size: 1.3rem; margin: 40px 0 16px; text-align: center; }
+    .game { border-left: 6px solid var(--sea); }
+    .game h3 { margin: 10px 0 6px; font-size: 1.35rem; color: var(--sea); }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+    .badge.later { background: var(--muted); }
+    .more { text-align: center; color: var(--muted); background: var(--soft); box-shadow: none; }
+    ul.values { padding-left: 20px; margin: 0; }
+    ul.values li { margin-bottom: 4px; }
+    a { color: var(--sea); }
+    footer { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 40px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Momo <span>Kids</span> Lab</h1>
+      <p class="tagline">Friendly learning games for curious kids</p>
+    </header>
+
+    <section class="card">
+      <h2>About Momo Kids Lab</h2>
+      <p><strong>Momo Kids Lab</strong> creates educational games for children and families, where kids
+        play and learn basic skills at the same time. Each game is an adventure with Momo, our friendly
+        main character, and focuses on a different kind of learning, from numbers and math to puzzles,
+        problem-solving and more.</p>
+      <p>Our games are made to be:</p>
+      <ul class="values">
+        <li><strong>Fun first</strong>: learning happens through play, with no pressure.</li>
+        <li><strong>Kid-safe</strong>: no third-party ads and no personal information needed to play.</li>
+        <li><strong>Offline friendly</strong>: designed to be played without an internet connection.</li>
+        <li><strong>One-time purchase</strong>: no subscriptions or pay-to-win purchases.</li>
+      </ul>
+    </section>
+
+    <h2 class="section-title">Our Games</h2>
+
+    <section class="card game">
+      <span class="badge">Coming soon</span>
+      <h3>Momo Math Island</h3>
+      <p>Join Momo on an island adventure where adding, subtracting and counting turn into play.
+        Momo Math Island is an Android game made for young learners, with no pressure and plenty of fun.</p>
+    </section>
+
+    <section class="card game">
+      <span class="badge later">In development</span>
+      <h3>Momo Puzzle World</h3>
+      <p>A gentle puzzle adventure for young children. Momo, a cheerful explorer in a fox-ear hat,
+        and her blue buddy Bibi travel through worlds solving puzzles together. Momo cheers every
+        right answer, says "let's try again" after a wrong tap, and points the way when a hint is needed.
+        Wrong taps never cost anything.</p>
+      <ul class="values">
+        <li><strong>Adventure</strong>: 40 levels across Momo's Forest and Ocean World.</li>
+        <li><strong>Quick Puzzle</strong>: 100 levels of mixed puzzles that grow harder as you go.</li>
+        <li><strong>Daily Puzzle</strong>: a new puzzle every day, with a streak that never punishes missed days.</li>
+        <li><strong>Puzzle Book</strong>: harder replays of finished levels.</li>
+        <li><strong>Rewards</strong>: unlock hats for Momo's Closet and furniture for My Room.</li>
+      </ul>
+      <p>Builds eight thinking skills: observation, matching, rotation, logic, patterns, spatial sense,
+        memory and problem solving. Plays offline in English, Spanish and Thai, with no ads, accounts
+        or in-app purchases.</p>
+    </section>
+
+    <section class="card more">
+      <p>More Momo games in different learning modes are on the way.</p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>One privacy policy covers all Momo Kids Lab games.</p>
+      <p><a href="momo-math-island/privacy-policy.html">Momo Kids Lab Privacy Policy</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Questions or feedback? Email us at
+        <a href="mailto:momokidslab@gmail.com">momokidslab@gmail.com</a>.</p>
+    </section>
+
+    <footer>&copy; 2026 Momo Kids Lab &middot; <a href="momo-math-island/privacy-policy.html">Privacy Policy</a></footer>
+  </main>
+</body>
+</html>
