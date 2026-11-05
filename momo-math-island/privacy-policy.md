@@ -1,7 +1,7 @@
 # Momo Kids Lab Privacy Policy
 
 **Effective Date: October 27, 2026**
-**Last Updated: October 27, 2026**
+**Last Updated: November 4, 2026**
 
 ## About Momo Kids Lab
 
@@ -16,6 +16,8 @@ More games in different learning modes are planned for the future.
 
 Our goal is to give children a fun way to learn, build confidence, improve basic skills, and enjoy learning through play. Momo Kids Lab games are designed primarily as **offline games** and are offered as **one-time purchases**.
 
+Our Games are designed for children ages 3–7 and their families.
+
 This Privacy Policy applies to all games published by Momo Kids Lab (each a "Game" and together the "Games"), now and in the future. If a future Game works differently from what is described here, we will update this Privacy Policy before that Game is released.
 
 ## Privacy
@@ -26,15 +28,19 @@ Our Games are designed to operate without requiring players to provide personal 
 
 Our Games do not require players to provide their full name, email address, telephone number, home address, precise location, photographs, videos, voice recordings, contacts, messages, passwords, social media information, or personal profiles in order to play.
 
+Some Games let a child choose an optional nickname or avatar that is shown only inside the Game. A nickname is never required, is saved only on the player's device, and is not sent to Momo Kids Lab. Please don't use a child's full real name.
+
 We do not sell or rent players' personal information to third parties.
 
 ## Offline Gameplay
 
-Our Games are designed to be played offline, and an internet connection is not required for normal gameplay.
+Our Games are designed to be played offline, and an internet connection is not required for normal gameplay. Our Games do not request the network (internet) permission or other device permissions. Where a Game offers a link to a web page, such as this Privacy Policy, the link opens in the device's own web browser, outside the Game.
 
 Game progress, scores, stars, collected rewards, settings, and other game-related information may be stored locally on the player's device so that the Game can save and remember gameplay progress.
 
-Locally stored gameplay information is not intentionally transmitted to Momo Kids Lab.
+Game progress is saved only on the player's device. Locally stored gameplay information is not intentionally transmitted to Momo Kids Lab.
+
+A parent or guardian can delete all locally stored game information at any time by resetting it in the Game's grown-up settings (where a Game has this option), by clearing the app's data in the device settings, or by uninstalling the Game.
 
 Deleting a Game, clearing application data, changing devices, resetting a device, or experiencing a device failure may result in the loss of locally stored game progress. Momo Kids Lab is not responsible for the loss of locally stored game data caused by deletion, device failure, operating-system changes, device replacement, or circumstances outside our reasonable control.
 
@@ -44,13 +50,17 @@ Our Games are intended to be **one-time purchase games**. Players are not requir
 
 Our Games do not require subscriptions, recurring payments, gacha purchases, loot boxes, real-money virtual currency, pay-to-win purchases, or third-party advertising.
 
+Momo Puzzle World is a one-time purchase with no in-app purchases and no ads.
+
 Any purchase required to obtain a Game is processed through the applicable official app store, such as Google Play.
 
 Momo Kids Lab does not receive or store a player's credit-card or payment-card information through our Games. Payment processing is handled by the applicable platform according to its own privacy policy and terms.
 
-## Advertising
+## Advertising, Analytics, and Tracking
 
 Our Games do not display third-party advertisements.
+
+Our Games do not have player accounts and do not include analytics, tracking, or measurement tools, and they do not track players across other apps or websites.
 
 We do not use our Games to create advertising profiles for children, and we do not sell or rent children's personal information to advertisers.
 
@@ -60,7 +70,13 @@ Our Games are educational games designed for children and families. We take chil
 
 Our Games are designed so that children can play without providing personal information. We do not intentionally collect personal information from children through normal offline gameplay.
 
+Parts of our Games that are meant for grown-ups sit behind a simple grown-up check. Depending on the Game, these can include gameplay and sound settings, the option to reset progress, and links to web pages.
+
 Parents and guardians are encouraged to supervise their children's use of mobile devices and app-store accounts.
+
+## Character Voices, Music, and Sounds
+
+Our Games may include prerecorded character voices, such as Momo's voice, as well as background music and sound effects. These come inside the Game. Momo's voice is based on the voice of the creator of Momo Kids Lab and was created with AI voice tools. Our Games do not record, collect, or store players' voices, and they do not use the microphone.
 
 ## Third-Party Platforms
 
@@ -92,7 +108,7 @@ Momo Kids Lab is not responsible for changes made by third-party platforms, oper
 
 ## Educational Disclaimer
 
-Our Games are designed as educational entertainment intended to help children practice basic skills, such as counting, mathematics, and problem-solving.
+Our Games are designed as educational entertainment intended to help children practice basic skills, such as counting, mathematics, puzzles, and problem-solving.
 
 Our Games are intended to supplement learning through play and are **not a replacement for formal education, classroom instruction, tutoring, or professional educational services**.
 
@@ -122,9 +138,9 @@ We use this information only as reasonably necessary to respond to support reque
 
 Our Games and their original content are owned by or licensed to **Momo Kids Lab**, except for third-party materials, which remain subject to their respective rights and licenses. Some artwork was created with the help of AI tools.
 
-This includes, but is not limited to, the names of our Games, Momo Kids Lab branding, the Momo character, other original characters, character designs, artwork, illustrations, visual effects, logos, icons, user-interface designs, original educational content, learning materials, game content, character dialogue and in-game text, original music and sounds, original game design, and other original creative materials.
+This includes, but is not limited to, the names of our Games, Momo Kids Lab branding, the Momo character, other original characters, character designs, artwork, illustrations, visual effects, logos, icons, user-interface designs, original educational content, learning materials, game content, character dialogue and in-game text, original music, sounds, and character voice recordings, original game design, and other original creative materials.
 
-All applicable rights are reserved.
+All applicable rights are reserved. Our Games are licensed to players for personal, non-commercial use.
 
 No part of our Games may be copied, reproduced, redistributed, republished, sold, or used to create a substantially similar commercial product without appropriate authorization from Momo Kids Lab, except where permitted by applicable law.
 

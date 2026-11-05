@@ -12,7 +12,7 @@ Website for **Momo Kids Lab**: educational games where kids play and learn basic
 
 ## Privacy Policy
 
-One policy covers all Momo Kids Lab games:
+One privacy policy covers all Momo Kids Lab games, including Momo Math Island and Momo Puzzle World:
 https://shinmeijoudai.github.io/momo-math-island/privacy-policy.html
 
 Momo Puzzle World link (opens the same policy):
