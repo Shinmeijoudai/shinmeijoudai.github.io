@@ -1,155 +1,220 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Momo Kids Lab</title>
-  <meta name="description" content="Momo Kids Lab makes friendly educational games where kids play and learn basic skills at the same time.">
-  <style>
-    :root {
-      --bg: #fff8ef;
-      --card: #ffffff;
-      --ink: #2b2a33;
-      --muted: #6b6878;
-      --accent: #ff8a5b;
-      --sea: #3fb6c6;
-      --soft: #fff1e6;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #1d1c24; --card: #282733; --ink: #f4f1ea; --muted: #b3afc0; --soft: #33313f; }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.6;
-    }
-    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
-    header { text-align: center; margin-bottom: 40px; }
-    h1 { font-size: 2.6rem; margin: 0; letter-spacing: -0.02em; }
-    h1 span { color: var(--accent); }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .card {
-      background: var(--card);
-      border-radius: 20px;
-      padding: 28px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
-      margin-bottom: 24px;
-    }
-    .card h2 { margin-top: 0; color: var(--sea); }
-    .section-title { font-size: 1.3rem; margin: 40px 0 16px; text-align: center; }
-    .game { border-left: 6px solid var(--sea); }
-    .game h3 { margin: 10px 0 6px; font-size: 1.35rem; color: var(--sea); }
-    .badge {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 999px;
-    }
-    .badge.later { background: var(--muted); }
-    .badge.age { background: var(--sea); }
-    .game h4 { margin: 20px 0 6px; font-size: 1.05rem; }
-    .more { text-align: center; color: var(--muted); background: var(--soft); box-shadow: none; }
-    ul.values { padding-left: 20px; margin: 0; }
-    ul.values li { margin-bottom: 4px; }
-    a { color: var(--sea); }
-    footer { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 40px; }
-    footer a { color: var(--muted); }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Momo Kids Lab — Learning games for curious kids</title>
+<meta name="description" content="Momo Kids Lab makes gentle, ad-free learning games for kids ages 3–7. Join Momo, a brave little explorer, on math and puzzle adventures that play fully offline.">
+<meta name="theme-color" content="#EAF6FF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Momo Kids Lab — Learning games for curious kids">
+<meta property="og:description" content="Gentle, ad-free learning games for kids ages 3–7, starring Momo.">
+<meta property="og:url" content="https://shinmeijoudai.github.io/">
+<meta property="og:image" content="https://shinmeijoudai.github.io/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/img/hero.webp">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Momo <span>Kids</span> Lab</h1>
-      <p class="tagline">Friendly learning games for curious kids</p>
-    </header>
+<a class="skip" href="#main">Skip to content</a>
 
-    <section class="card">
-      <h2>About Momo Kids Lab</h2>
-      <p><strong>Momo Kids Lab</strong> creates educational games for children and families, where kids
-        play and learn basic skills at the same time. Each game is an adventure with Momo, our friendly
-        main character, and focuses on a different kind of learning, from numbers and math to puzzles,
-        problem-solving and more.</p>
-      <p>Our games are made to be:</p>
-      <ul class="values">
-        <li><strong>Fun first</strong>: learning happens through play, with no pressure.</li>
-        <li><strong>Kid-safe</strong>: no third-party ads and no personal information needed to play.</li>
-        <li><strong>Offline friendly</strong>: designed to be played without an internet connection.</li>
-        <li><strong>One-time purchase</strong>: no subscriptions or pay-to-win purchases.</li>
-      </ul>
-    </section>
+<header class="hero" id="top">
+  <img class="hero-img" src="assets/img/hero.webp" alt="Momo, a cheerful explorer girl in a fox-ear hat, runs across a flowery floating island with her blue buddy toward a signpost that reads Learn, Explore, Grow" fetchpriority="high">
+  <div class="hero-fade"></div>
 
-    <h2 class="section-title">Our Games</h2>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="./">
+      <img src="assets/img/momo-face.webp" alt="" width="52" height="52">
+      <span><span class="brand-name">Momo <span>Kids</span> Lab</span><span class="brand-tag">PLAY · LEARN · GROW</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#games">Games</a>
+      <a href="#meet-momo">Meet Momo</a>
+      <a href="#parents">For Parents</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-sun" href="#games">Play with Momo</a>
+  </nav>
 
-    <section class="card game">
-      <span class="badge">Coming soon</span>
-      <h3>Momo Math Island</h3>
-      <p>Join Momo on an island adventure where adding, subtracting and counting turn into play.
-        Momo Math Island is an Android game made for young learners, with no pressure and plenty of fun.</p>
-    </section>
+  <div class="hero-copy">
+    <div class="hero-copy-inner">
+      <span class="pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.5 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>
+        Learning games for ages 3–7
+      </span>
+      <h1>Hi, I'm Momo!<br><span>Let's learn</span> and play together.</h1>
+      <p class="hero-text">Join Momo and her blue buddy on gentle adventures that build math and thinking skills. No ads, no accounts, no pressure — just curious kids having fun.</p>
+      <div class="btn-row">
+        <a class="btn btn-sun btn-lg" href="#games">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+          Explore our games</a>
+        <a class="btn btn-cloud btn-lg" href="#parents">For parents</a>
+      </div>
+    </div>
+  </div>
 
-    <section class="card game">
-      <span class="badge later">In development</span> <span class="badge age">Ages 3–7</span>
-      <h3>Momo Puzzle World</h3>
-      <p>Join Momo, a cheerful explorer in a fox-ear hat, and her round blue buddy Bibi on a gentle puzzle
-        adventure through five magical worlds: the Forest, the Ocean, Candy World, Dinosaur World and Space.
-        Every puzzle your child solves helps Momo on her journey, and Momo cheers every success along the way.</p>
+  <div class="bubble" aria-hidden="true">Ready for an adventure?</div>
 
-      <h4>What your child learns</h4>
-      <p>Every puzzle practices a real thinking skill:</p>
-      <ul class="values">
-        <li><strong>Looking closely</strong>: spotting small details and finding hidden things</li>
-        <li><strong>Matching</strong>: seeing what is the same and what is different</li>
-        <li><strong>Patterns</strong>: guessing what comes next, an early step toward math</li>
-        <li><strong>Memory</strong>: remembering where things are and in what order</li>
-        <li><strong>Shapes and space</strong>: turning pieces and finding the right path</li>
-        <li><strong>Logic and problem solving</strong>: thinking ahead and trying a plan</li>
-      </ul>
-      <p>Puzzles start very easy and grow slowly with your child, so every child can succeed.</p>
+  <ul class="promise">
+    <li><span class="ico o"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span>
+      <span><strong>No ads, ever</strong><span class="s">Nothing to tap by accident</span></span></li>
+    <li><span class="ico g"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+      <span><strong>No accounts or data</strong><span class="s">Kids just open and play</span></span></li>
+    <li><span class="ico b"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><path d="M3 3l18 18"/></svg></span>
+      <span><strong>Plays offline</strong><span class="s">Great for trips and quiet time</span></span></li>
+    <li><span class="ico p"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg></span>
+      <span><strong>One-time purchase</strong><span class="s">No in-app shop, no surprises</span></span></li>
+  </ul>
+</header>
 
-      <h4>Growing confidence and kindness</h4>
-      <ul class="values">
-        <li><strong>No failing</strong>: a wrong tap just gets a soft "Let's try again!", and nothing is ever lost.</li>
-        <li><strong>No timers</strong>: every child plays at their own pace.</li>
-        <li><strong>Helpful hints</strong>: Momo points the way in small steps, so your child still solves it themselves.</li>
-        <li><strong>Caring for a friend</strong>: children solve puzzles to help Momo, which builds kindness and empathy.</li>
-        <li><strong>Creativity</strong>: children dress Momo up and decorate her room their own way.</li>
-      </ul>
+<main id="main">
 
-      <h4>Lots to play</h4>
-      <ul class="values">
-        <li><strong>Adventure</strong>: 100 levels across five worlds, each with its own story.</li>
-        <li><strong>Quick Puzzle</strong>: 100 mixed puzzles that get a little harder as you go.</li>
-        <li><strong>Daily Puzzle</strong>: a new puzzle every day. Your streak is never reset for missed days.</li>
-        <li><strong>Puzzle Book</strong>: replay finished levels as harder challenges.</li>
-        <li><strong>Collection</strong>: gather special puzzle pieces from every world.</li>
-        <li><strong>Closet</strong>: unlock hats and outfits, like the Explorer look and the Little Chef.</li>
-        <li><strong>My Room</strong>: earn furniture and decorate the room where Momo and Bibi live.</li>
-      </ul>
-    </section>
+<section id="games" class="sec games">
+  <div class="wrap games-inner">
+    <div class="center">
+      <span class="eyebrow">Our games</span>
+      <h2 class="h2">Every game is a new adventure</h2>
+      <p class="lead">Each Momo game focuses on one kind of learning, so kids can grow one skill at a time.</p>
+    </div>
 
-    <section class="card more">
-      <p>More Momo games in different learning modes are on the way.</p>
-    </section>
+    <div class="grid-2">
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/act-add.webp" alt="Momo and her buddy ride a friendly green dragon past floating islands with apples and plus signs" loading="lazy" width="768" height="512">
+          <span class="badge">Coming soon to Google Play</span>
+        </div>
+        <div class="card-body">
+          <h3>Momo Math Island</h3>
+          <p>Count, compare, add and subtract on a sunny island full of friends. Momo cheers every answer and gently helps when kids try again.</p>
+          <ul class="tags"><li>Counting</li><li>Comparing</li><li>Adding</li><li>Subtracting</li></ul>
+          <div class="card-foot"><a class="btn btn-sun" href="momo-math-island/">See the game</a><span>Ages 3–7 · Android</span></div>
+        </div>
+      </article>
 
-    <section class="card">
-      <h2>Privacy</h2>
-      <p>One privacy policy covers all Momo Kids Lab games, including Momo Math Island and Momo Puzzle World.</p>
-      <p><a href="momo-math-island/privacy-policy.html">Momo Kids Lab Privacy Policy</a></p>
-    </section>
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/act-count.webp" alt="Momo sits in a sunny forest with her buddy, stacking colorful shape blocks" loading="lazy" width="768" height="512">
+          <span class="badge soft">In development</span>
+        </div>
+        <div class="card-body">
+          <h3>Momo Puzzle World</h3>
+          <p>Solve gentle puzzles with Momo and Bibi across five magical worlds — Forest, Ocean, Candy, Dinosaur and Space — and unlock hats for Momo's closet and furniture for her room.</p>
+          <ul class="tags blue"><li>Logic</li><li>Patterns</li><li>Memory</li><li>Spatial sense</li><li>+4 more skills</li></ul>
+          <div class="card-foot"><a class="btn btn-cloud" href="mailto:momokidslab@gmail.com?subject=Tell%20me%20when%20Momo%20Puzzle%20World%20launches">Get launch news</a><span>Ages 3–7 · Android</span></div>
+        </div>
+      </article>
+    </div>
 
-    <section class="card">
-      <h2>Contact</h2>
-      <p>Questions or feedback? Email us at
-        <a href="mailto:momokidslab@gmail.com">momokidslab@gmail.com</a>.</p>
-    </section>
+    <div class="more">
+      <img src="assets/img/decor-rainbow.webp" alt="" loading="lazy">
+      <div>
+        <h3>More adventures are on the way</h3>
+        <p>Momo is packing her bag for new learning worlds. Every game shares the same safe, kind rules.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>&copy; 2026 Momo Kids Lab &middot; <a href="momo-math-island/privacy-policy.html">Privacy Policy</a></footer>
-  </main>
+<section class="sec learn">
+  <div class="wrap stack">
+    <div class="center">
+      <span class="eyebrow green">How kids learn</span>
+      <h2 class="h2">Play first. Learning follows.</h2>
+    </div>
+    <div class="grid-4">
+      <div class="learn-item"><img src="assets/img/act-compare.webp" alt="Momo picks a pink flower in a blossom garden while her buddy laughs" loading="lazy" width="768" height="512"><h3>Short, happy rounds</h3><p>Bite-sized activities fit little attention spans and end on a win.</p></div>
+      <div class="learn-item"><img src="assets/img/world-forest.webp" alt="A sunny forest clearing with a castle on a floating island in the distance" loading="lazy" width="768" height="512"><h3>Mistakes are welcome</h3><p>Wrong taps cost nothing. Momo encourages another try and offers a hint.</p></div>
+      <div class="learn-item"><img src="assets/img/world-sky.webp" alt="A rainbow arches over waterfalls and floating islands" loading="lazy" width="768" height="512"><h3>Rewards that feel earned</h3><p>Stars, outfits and room decorations — never coins to buy.</p></div>
+      <div class="learn-item"><img src="assets/img/act-subtract.webp" alt="Momo and her buddy rest on a golden crescent moon in a starry sky" loading="lazy" width="768" height="512"><h3>Calm by design</h3><p>Soft music, gentle colors and no timers racing the clock.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="meet-momo" class="sec meet">
+  <div class="wrap split">
+    <div class="stage">
+      <div class="stage-frame"><img id="outfit-img" src="assets/img/momo-friends.webp" alt="Momo in her explorer outfit waving beside her blue buddy" loading="lazy"></div>
+      <div class="outfits" role="group" aria-label="Choose an outfit">
+        <button class="outfit" type="button" aria-pressed="true" data-src="assets/img/momo-friends.webp" data-alt="Momo in her explorer outfit waving beside her blue buddy">Explorer</button>
+        <button class="outfit" type="button" aria-pressed="false" data-src="assets/img/ward-crown.webp" data-alt="Momo wearing a little star crown beside her blue buddy">Star crown</button>
+        <button class="outfit" type="button" aria-pressed="false" data-src="assets/img/ward-bow.webp" data-alt="Momo with a red ribbon bow on her hat beside her blue buddy">Ribbon bow</button>
+        <button class="outfit" type="button" aria-pressed="false" data-src="assets/img/ward-star.webp" data-alt="Momo beside her blue buddy, who wears a bouncy star antenna">Buddy star</button>
+        <button class="outfit" type="button" aria-pressed="false" data-src="assets/img/ward-phones.webp" data-alt="Momo beside her blue buddy, who wears rainbow headphones">Headphones</button>
+      </div>
+    </div>
+    <div class="copy">
+      <span class="eyebrow">Meet Momo</span>
+      <h2 class="h2">A brave little explorer who never gives up</h2>
+      <p>Momo wears her favorite fox-ear hat on every adventure. She cheers when kids get it right, offers a hint when they're stuck, and always says "Let's try again!"</p>
+      <p>Her blue buddy is always by her side — and both of them love new outfits. Kids earn crowns, bows, stars and headphones as they play.</p>
+      <p class="hint">Try it: tap an outfit to dress them up.</p>
+    </div>
+  </div>
+</section>
+
+<section id="parents" class="sec dark">
+  <div class="wrap stack">
+    <div class="dark-head">
+      <div>
+        <span class="eyebrow gold">For parents &amp; teachers</span>
+        <h2 class="h2">Our promise to your family</h2>
+        <p class="lead">We build the games we'd want our own kids to play. One simple privacy policy covers every Momo Kids Lab game, now and in the future.</p>
+      </div>
+      <a class="btn btn-sun" href="momo-math-island/privacy-policy.html">Read our privacy policy</a>
+    </div>
+    <div class="grid-3">
+      <div class="tile"><h3>No ads or trackers</h3><p>No third-party advertising, no analytics following your child around.</p></div>
+      <div class="tile"><h3>Nothing collected</h3><p>No sign-up, no personal data. Progress stays on your device.</p></div>
+      <div class="tile"><h3>Pay once, play forever</h3><p>A single purchase unlocks the whole game. No in-app shop.</p></div>
+      <div class="tile"><h3>Fully offline</h3><p>No internet needed to play — perfect for cars, planes and bedtime.</p></div>
+      <div class="tile"><h3>Kind feedback only</h3><p>No failure screens or lost lives. Stars reflect effort, not speed.</p></div>
+      <div class="tile"><h3>Made for many homes</h3><p>Play in English, Spanish or Thai, with big buttons for small hands.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap">
+    <div class="contact">
+      <div class="contact-copy">
+        <span class="eyebrow">Say hello</span>
+        <h2>Questions, ideas or launch news?</h2>
+        <p class="lead">Parents, teachers and little fans are always welcome to write to Momo. We read every message.</p>
+        <a class="btn btn-sun" href="mailto:momokidslab@gmail.com">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+          momokidslab@gmail.com</a>
+      </div>
+      <div class="contact-art"><img src="assets/img/momo-friends.webp" alt="Momo waves hello next to her smiling blue buddy" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/momo-face.webp" alt="" width="44" height="44"><span class="brand-name">Momo Kids Lab</span></a>
+    <nav aria-label="Footer">
+      <a href="#games">Games</a>
+      <a href="momo-math-island/">Momo Math Island</a>
+      <a href="momo-math-island/privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:momokidslab@gmail.com">Contact</a>
+    </nav>
+    <small>© 2026 Momo Kids Lab. Created by Pika Gallagher · Developed by Nontawat Kaewjeen.</small>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.outfit').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.querySelectorAll('.outfit').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+    btn.setAttribute('aria-pressed', 'true');
+    var img = document.getElementById('outfit-img');
+    img.src = btn.dataset.src;
+    img.alt = btn.dataset.alt;
+  });
+});
+</script>
 </body>
 </html>
