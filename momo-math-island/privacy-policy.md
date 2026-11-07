@@ -1,18 +1,13 @@
 # Momo Kids Lab Privacy Policy
 
 **Effective Date: October 27, 2026**
-**Last Updated: November 4, 2026**
+**Last Updated: November 6, 2026**
 
 ## About Momo Kids Lab
 
 **Momo Kids Lab** creates educational games for children and families, where kids play and learn basic skills at the same time. Each game is an adventure with Momo, our friendly main character, and focuses on a different kind of learning, such as numbers and math, puzzles and problem-solving, and more.
 
-Our games currently include:
-
-* **Momo Math Island**: a math adventure where children practice counting, comparing numbers, addition, and subtraction.
-* **Momo Puzzle World** (upcoming): a gentle puzzle adventure where Momo and her buddy Bibi travel through worlds solving puzzles together, helping children practice observation, matching, rotation, logic, patterns, spatial sense, memory, and problem solving.
-
-More games in different learning modes are planned for the future.
+To learn about each of our games, visit our website at https://shinmeijoudai.github.io or see the About page inside each Game.
 
 Our goal is to give children a fun way to learn, build confidence, improve basic skills, and enjoy learning through play. Momo Kids Lab games are designed primarily as **offline games** and are offered as **one-time purchases**.
 
@@ -49,8 +44,6 @@ Deleting a Game, clearing application data, changing devices, resetting a device
 Our Games are intended to be **one-time purchase games**. Players are not required to pay recurring fees to continue playing.
 
 Our Games do not require subscriptions, recurring payments, gacha purchases, loot boxes, real-money virtual currency, pay-to-win purchases, or third-party advertising.
-
-Momo Puzzle World is a one-time purchase with no in-app purchases and no ads.
 
 Any purchase required to obtain a Game is processed through the applicable official app store, such as Google Play.
 
@@ -108,7 +101,7 @@ Momo Kids Lab is not responsible for changes made by third-party platforms, oper
 
 ## Educational Disclaimer
 
-Our Games are designed as educational entertainment intended to help children practice basic skills, such as counting, mathematics, puzzles, and problem-solving.
+Our Games are designed as educational entertainment intended to help children practice basic skills through play.
 
 Our Games are intended to supplement learning through play and are **not a replacement for formal education, classroom instruction, tutoring, or professional educational services**.
 
@@ -158,8 +151,9 @@ We encourage parents and users to review this Privacy Policy periodically.
 
 If you have questions about this Privacy Policy, children's privacy, or any of our Games, please contact us:
 
-**Momo Kids Lab**
-**Email:** momokidslab@gmail.com
+**Momo Kids Lab**  
+**Email:** momokidslab@gmail.com  
+**Website:** https://shinmeijoudai.github.io
 
 ---
 
