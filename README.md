@@ -8,6 +8,7 @@ Website for **Momo Kids Lab**: educational games where kids play and learn basic
 
 - **Momo Math Island** (coming soon): an Android math adventure for young learners.
 - **Momo Puzzle World** (in development, ages 3–7): a gentle puzzle adventure with Momo and Bibi through five worlds, with 100 adventure levels, 100 quick puzzles, a daily puzzle, Puzzle Book, Collection, Closet and My Room.
+- **Momo's Yummy World** (in development, ages 3–7): a cooking adventure with Momo and Bibi through six food worlds.
 - More games in different learning modes are planned.
 
 ## Site structure
@@ -19,11 +20,14 @@ Website for **Momo Kids Lab**: educational games where kids play and learn basic
 
 ## Privacy Policy
 
-One privacy policy covers all Momo Kids Lab games, including Momo Math Island and Momo Puzzle World:
+One privacy policy covers all Momo Kids Lab games, including Momo Math Island, Momo Puzzle World and Momo's Yummy World:
 https://shinmeijoudai.github.io/momo-math-island/privacy-policy.html
 
 Momo Puzzle World link (opens the same policy):
 https://shinmeijoudai.github.io/momo-puzzle-world/privacy-policy.html
+
+Momo's Yummy World link (opens the same policy):
+https://shinmeijoudai.github.io/momo-yummy-world/privacy-policy.html
 
 ## Contact
 
