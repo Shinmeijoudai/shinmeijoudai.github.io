@@ -196,3 +196,6 @@ html:lang(th) body{line-height:1.8}
 html:lang(zh-CN) body{line-height:1.7}
 @media(max-width:1100px){.nav{flex-wrap:wrap}.language-picker{margin-left:auto}}
 @media(max-width:480px){.language-picker{padding:4px 7px}.language-picker select{font-size:14px;max-width:105px}.nav{gap:10px}}
+
+/* Hide the stray first pixel row in these original outfit cutouts. */
+.stage-frame img[src*="ward-star.webp"],.stage-frame img[src*="ward-phones.webp"]{clip-path:inset(1px 0 0)}
