@@ -187,3 +187,12 @@ p{margin:0}
   .card-body{padding:24px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Website language selector */
+.language-picker{display:inline-flex;align-items:center;gap:6px;background:#fff;border:2px solid #b8def6;border-radius:20px;padding:6px 10px;color:#123e68;flex-shrink:0}
+.language-picker select{font:inherit;font-size:15px;font-weight:700;color:inherit;background:transparent;border:0;min-height:32px;max-width:132px;cursor:pointer}
+.language-picker select:focus-visible{outline:3px solid #ffa726;outline-offset:3px;border-radius:5px}
+html:lang(th) body{line-height:1.8}
+html:lang(zh-CN) body{line-height:1.7}
+@media(max-width:1100px){.nav{flex-wrap:wrap}.language-picker{margin-left:auto}}
+@media(max-width:480px){.language-picker{padding:4px 7px}.language-picker select{font-size:14px;max-width:105px}.nav{gap:10px}}
