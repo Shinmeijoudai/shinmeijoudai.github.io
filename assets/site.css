@@ -200,3 +200,6 @@ html:lang(zh-CN) body{line-height:1.7}
 
 /* Hide the stray first pixel row in these original outfit cutouts. */
 .stage-frame img[src*="ward-star.webp"],.stage-frame img[src*="ward-phones.webp"]{clip-path:inset(1px 0 0)}
+
+/* Give the games introduction the full section width. */
+#games .center > .lead{max-width:none;width:100%}
