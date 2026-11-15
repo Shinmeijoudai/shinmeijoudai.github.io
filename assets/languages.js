@@ -473,6 +473,21 @@ const translations = {
     "es": "© 2026 Momo Kids Lab. Todos los derechos reservados.",
     "th": "© 2026 Momo Kids Lab สงวนลิขสิทธิ์",
     "zh-CN": "© 2026 Momo Kids Lab。保留所有权利。"
+  },
+  "Registration open": {
+    "es": "Inscripciones abiertas",
+    "th": "เปิดลงทะเบียนแล้ว",
+    "zh-CN": "现已开放报名"
+  },
+  "Register now": {
+    "es": "Regístrate ahora",
+    "th": "ลงทะเบียนเลย",
+    "zh-CN": "立即报名"
+  },
+  "Coming soon": {
+    "es": "Próximamente",
+    "th": "เร็ว ๆ นี้",
+    "zh-CN": "敬请期待"
   }
 };
 (function () {
