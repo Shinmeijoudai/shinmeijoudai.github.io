@@ -1,7 +1,7 @@
 # Momo Kids Lab Privacy Policy
 
 **Effective Date: October 27, 2026**
-**Last Updated: November 6, 2026**
+**Last Updated: November 16, 2026**
 
 ## About Momo Kids Lab
 
