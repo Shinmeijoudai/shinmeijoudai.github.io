@@ -253,3 +253,7 @@ body.beta-open{overflow:hidden}
 .beta-dialog h2{font-size:clamp(27px,5vw,34px)}
 .beta-cloud{padding-top:38px}
 @media(max-height:780px){.beta-art{max-height:150px}.beta-dialog p{font-size:16px;margin:10px 0}.beta-dialog .beta-note{font-size:13px}.beta-dialog h2{font-size:28px;margin:10px 0}.beta-cloud{padding-top:32px}}
+
+/* Hide the popup scroll track without blocking access to its contents. */
+.beta-dialog{scrollbar-width:none;-ms-overflow-style:none}
+.beta-dialog::-webkit-scrollbar{display:none;width:0;height:0}
