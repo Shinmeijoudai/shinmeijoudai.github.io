@@ -1,7 +1,7 @@
 # Momo Kids Lab Privacy Policy
 
 **Effective Date: October 27, 2026**
-**Last Updated: November 6, 2026**
+**Last Updated: November 16, 2026**
 
 ## About Momo Kids Lab
 
@@ -14,6 +14,8 @@ Our goal is to give children a fun way to learn, build confidence, improve basic
 Our Games are designed for children ages 3–7 and their families.
 
 This Privacy Policy applies to all games published by Momo Kids Lab (each a "Game" and together the "Games"), now and in the future. If a future Game works differently from what is described here, we will update this Privacy Policy before that Game is released.
+
+It currently covers these Games: Momo Math Island, Momo Puzzle World, Momo's Yummy World and Momo Dreamy Puzzleland.
 
 ## Privacy
 

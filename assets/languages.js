@@ -254,11 +254,6 @@ const translations = {
     "th": "รูปทรงและสี",
     "zh-CN": "形状与颜色"
   },
-  "Ages 2–7 · Android": {
-    "es": "De 2 a 7 años · Android",
-    "th": "วัย 2–7 ปี · Android",
-    "zh-CN": "2–7 岁 · Android"
-  },
   "More adventures are on the way": {
     "es": "Más aventuras están en camino",
     "th": "การผจญภัยครั้งใหม่กำลังมา",
