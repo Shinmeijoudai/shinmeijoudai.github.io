@@ -257,3 +257,7 @@ body.beta-open{overflow:hidden}
 /* Hide the popup scroll track without blocking access to its contents. */
 .beta-dialog{scrollbar-width:none;-ms-overflow-style:none}
 .beta-dialog::-webkit-scrollbar{display:none;width:0;height:0}
+
+/* Two-color invitation headline matching the approved reference. */
+#beta-title .beta-title-navy{display:block;color:#123e68}
+#beta-title .beta-title-orange{display:block;color:#df7108}
