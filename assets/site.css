@@ -271,3 +271,8 @@ body.beta-open{overflow:hidden}
 
 /* Restore the original navy invitation button lettering. */
 .beta-dialog a[data-beta="cta"]{color:#123e68;-webkit-text-stroke:0;text-shadow:none}
+
+/* A cozy speech bubble beside Momo’s fox ear. */
+.hero .bubble{left:68%;right:auto;top:150px;width:220px;max-width:25%;padding:18px 20px;border:3px solid #b9ddf5;border-radius:34px 38px 32px 36px;background:linear-gradient(145deg,#fff,#fffaf0);box-shadow:0 6px 0 #b9ddf5,0 9px 20px #123e6810;font-size:20px;line-height:1.35}
+.hero .bubble::after{left:-17px;right:auto;bottom:20px;width:26px;height:22px;background:#fffdf7;transform:scaleX(-1) skewY(25deg) rotate(-18deg)}
+@media(min-width:1500px){.hero .bubble{left:67%;top:155px}}
