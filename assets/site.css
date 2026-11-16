@@ -265,3 +265,6 @@ body.beta-open{overflow:hidden}
 /* Place Momo’s speech bubble on the right side of the hero. */
 .hero .bubble{left:auto;right:clamp(24px,5vw,100px);top:145px;translate:0 0}
 .hero .bubble::after{right:auto;left:-19px;transform:scaleX(-1) skewY(25deg) rotate(-18deg)}
+
+/* Plain white invitation button lettering. */
+.beta-dialog a[data-beta="cta"]{color:#fff;-webkit-text-stroke:0;text-shadow:none;background:linear-gradient(#ffd255,#ffad16);border:3px solid #fff;border-radius:999px;box-shadow:0 5px 0 #d78200}
