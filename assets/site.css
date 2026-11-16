@@ -268,3 +268,6 @@ body.beta-open{overflow:hidden}
 
 /* Plain white invitation button lettering. */
 .beta-dialog a[data-beta="cta"]{color:#fff;-webkit-text-stroke:0;text-shadow:none;background:linear-gradient(#ffd255,#ffad16);border:3px solid #fff;border-radius:999px;box-shadow:0 5px 0 #d78200}
+
+/* Restore the original navy invitation button lettering. */
+.beta-dialog a[data-beta="cta"]{color:#123e68;-webkit-text-stroke:0;text-shadow:none}
