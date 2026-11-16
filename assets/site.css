@@ -245,3 +245,11 @@ body.beta-open{overflow:hidden}
 @media(max-width:480px){.beta-cloud{border-radius:45px;padding:30px 20px 24px}.beta-dialog .beta-games{font-size:16px}.beta-dialog .beta-offer{font-size:17px}}
 
 .beta-cloud{background: url("beta-cloud.svg") center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;padding:42px 48px 38px}.beta-art{margin-bottom:-38px}@media(max-width:480px){.beta-cloud{padding:36px 30px 32px}.beta-art{margin-bottom:-28px}}
+
+/* Keep the invitation artwork compact and the close control reachable. */
+.beta-art{width:auto;max-width:92%;height:auto;max-height:220px;object-fit:contain;margin:0 auto -30px}
+.beta-dialog{width:min(540px,calc(100% - 20px));max-height:calc(100dvh - 20px);padding-top:12px}
+.beta-close{top:14px;right:14px}
+.beta-dialog h2{font-size:clamp(27px,5vw,34px)}
+.beta-cloud{padding-top:38px}
+@media(max-height:780px){.beta-art{max-height:150px}.beta-dialog p{font-size:16px;margin:10px 0}.beta-dialog .beta-note{font-size:13px}.beta-dialog h2{font-size:28px;margin:10px 0}.beta-cloud{padding-top:32px}}
