@@ -4,7 +4,7 @@ const dialog=document.getElementById('beta-dialog');
 const reopen=document.getElementById('beta-reopen');
 const picker=document.getElementById('site-language');
 let previousFocus;
-function translate(){const language=document.documentElement.lang;const strings=copy[language]||copy.en;document.querySelectorAll('[data-beta]').forEach(el=>{el.textContent=strings[el.dataset.beta];});dialog.querySelector('.beta-close').setAttribute('aria-label',strings.close);}
+function translate(){const language=document.documentElement.lang;const strings=copy[language]||copy.en;document.querySelectorAll('[data-beta]').forEach(el=>{if(el.dataset.beta==='title'){const parts={'en':['Little testers,','big adventures!'],'es':['¡Pequeños testers,','grandes aventuras!'],'th':['ผู้ทดสอบตัวน้อย','ผจญภัยครั้งใหญ่!'],'zh-CN':['小小测试员，','大大冒险！']}[language]||['Little testers,','big adventures!'];el.replaceChildren(...parts.map((text,i)=>{const span=document.createElement('span');span.className=i?'beta-title-orange':'beta-title-navy';span.textContent=text;return span;}));}else{el.textContent=strings[el.dataset.beta];}});dialog.querySelector('.beta-close').setAttribute('aria-label',strings.close);}
 function remember(){try{sessionStorage.setItem('momo-beta-invite-seen','1');}catch(_){}}
 function open(){if(dialog.open)return;translate();previousFocus=document.activeElement;dialog.showModal();document.body.classList.add('beta-open');remember();}
 dialog.querySelectorAll('[data-beta-close]').forEach(button=>button.addEventListener('click',()=>dialog.close()));
