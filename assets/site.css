@@ -233,3 +233,15 @@ body.beta-open{overflow:hidden}
 .beta-later{font-family:Arial,sans-serif;font-size:15px;margin:8px auto 0;line-height:1.4}
 .beta-dialog button:focus-visible,.beta-dialog a:focus-visible{outline:3px solid #1572a3;outline-offset:4px}
 @media(max-width:480px){.beta-dialog{padding:20px 6px 15px}.beta-cloud{padding:30px 22px 20px}.beta-art{width:95%;margin-bottom:-18px}.beta-close{top:20px;right:6px}.beta-dialog p{font-size:18px}.beta-dialog .beta-note{font-size:13px}.beta-later{font-size:14px}}
+
+/* Approved invitation wording and compact cloud layout. */
+.beta-dialog p{white-space:pre-line}
+.beta-dialog #beta-description{line-height:1.45}
+.beta-dialog .beta-games{font-size:17px;line-height:1.5;color:#264e6a}
+.beta-dialog .beta-offer{font-size:18px;color:#11677e;margin:14px 0 8px}
+.beta-dialog .beta-note{margin:12px 0 0}
+.beta-dialog h2{color:#123e68}
+.beta-cloud{border-radius:65px;background:#fffdf6;padding:38px 38px 28px}
+@media(max-width:480px){.beta-cloud{border-radius:45px;padding:30px 20px 24px}.beta-dialog .beta-games{font-size:16px}.beta-dialog .beta-offer{font-size:17px}}
+
+.beta-cloud{background: url("beta-cloud.svg") center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;padding:42px 48px 38px}.beta-art{margin-bottom:-38px}@media(max-width:480px){.beta-cloud{padding:36px 30px 32px}.beta-art{margin-bottom:-28px}}
