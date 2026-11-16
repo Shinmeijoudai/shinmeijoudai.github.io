@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" as="image" href="assets/img/hero.webp">
-<link rel="stylesheet" href="assets/site.css?v=20261116-10">
+<link rel="stylesheet" href="assets/site.css?v=20261116-11">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -273,6 +273,33 @@ testing instructions by email.</p>
 <button class="beta-reopen" type="button" id="beta-reopen" aria-haspopup="dialog" data-beta="reopen">Join the beta · 15 testers</button>
 <script src="assets/beta-invite.js?v=20261116-4" defer></script>
 
+
+<script>
+(function(){
+  const hero=document.querySelector('.hero');
+  const image=hero.querySelector('.hero-img');
+  const bubble=hero.querySelector('.bubble');
+  function placeBubble(){
+    if(window.innerWidth<=820)return;
+    const w=image.clientWidth,h=image.clientHeight;
+    const iw=image.naturalWidth||1536,ih=image.naturalHeight||1024;
+    const scale=Math.max(w/iw,h/ih);
+    // The outer tip of Momo's right fox ear is at (1230, 325).
+    // Match object-fit: cover and object-position: 70% center.
+    const earX=(w-iw*scale)*0.7+1230*scale;
+    const earY=(h-ih*scale)*0.5+325*scale;
+    const left=Math.min(w-bubble.offsetWidth-12,earX+12);
+    const top=Math.max(112,earY-bubble.offsetHeight+25);
+    bubble.style.setProperty('--ear-bubble-left',left+'px');
+    bubble.style.setProperty('--ear-bubble-top',top+'px');
+  }
+  image.addEventListener('load',placeBubble);
+  window.addEventListener('resize',placeBubble);
+  new ResizeObserver(placeBubble).observe(hero);
+  if(document.fonts)document.fonts.ready.then(placeBubble);
+  placeBubble();
+})();
+</script>
 </body>
 </html>
 
