@@ -1,4 +1,6 @@
 const translations = {
+"Little adventures.": {"es":"Pequeñas aventuras.","th":"ผจญภัยเล็ก ๆ","zh-CN":"小小冒险。"},
+"Big discoveries.": {"es":"Grandes descubrimientos.","th":"ค้นพบสิ่งยิ่งใหญ่","zh-CN":"大大发现。"},
 "Hi, we’re Momo & Bibi!": {"es":"¡Hola, somos Momo y Bibi!","th":"สวัสดี เราคือโมโม่และบิบิ!","zh-CN":"你好，我们是 Momo 和 Bibi！"},
 "Little adventures. Big discoveries.": {"es":"Pequeñas aventuras. Grandes descubrimientos.","th":"ผจญภัยเล็ก ๆ ค้นพบสิ่งยิ่งใหญ่","zh-CN":"小小冒险，大大发现。"},
 "Join curious Momo and her playful friend Bibi as they explore colorful worlds filled with numbers, puzzles, and little challenges. Each adventure encourages your child to think, solve problems, and build confidence at their own pace.": {"es":"Acompaña a la curiosa Momo y a su juguetón amigo Bibi mientras exploran mundos llenos de color, números, puzles y pequeños retos. Cada aventura anima a tu peque a pensar, resolver problemas y ganar confianza a su propio ritmo.","th":"ร่วมสำรวจโลกสีสันสดใสที่เต็มไปด้วยตัวเลข ปริศนา และความท้าทายเล็ก ๆ กับโมโม่ผู้ช่างสงสัยและบิบิเพื่อนจอมซน ทุกการผจญภัยชวนให้ลูกฝึกคิด แก้ปัญหา และสร้างความมั่นใจตามจังหวะของตัวเอง","zh-CN":"和充满好奇心的 Momo 及她活泼的朋友 Bibi 一起，探索充满数字、拼图和小挑战的缤纷世界。每次冒险都鼓励孩子思考、解决问题，并按自己的节奏建立自信。"},
