@@ -281,3 +281,24 @@ body.beta-open{overflow:hidden}
 .hero .bubble{width:clamp(150px,16vw,220px);max-width:none;top:var(--ear-bubble-top,140px);left:var(--ear-bubble-left,82%);right:auto;padding:14px 16px;font-size:clamp(16px,1.5vw,20px);box-sizing:border-box;animation:none}
 @media(min-width:1500px){.hero .bubble{left:var(--ear-bubble-left,82%);top:var(--ear-bubble-top,140px)}}
 .hero .bubble::after{bottom:16px}
+
+
+/* Learning-mode illustrated previews */
+.gameplay-showcase{background:#fff9f0}
+.gameplay-wrap{display:flex;flex-direction:column;gap:34px}
+.gameplay-feature{background:white;border:3px solid #e1edf9;border-radius:32px;padding:26px;box-shadow:0 7px 0 #d7e8f5}
+.gameplay-feature.puzzle-feature{border-color:#eadff8;box-shadow:0 7px 0 #e9def5}
+.gameplay-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:22px}
+.gameplay-heading>div{max-width:760px}
+.gameplay-heading h3{font-size:clamp(26px,3vw,36px);margin:5px 0 10px}
+.gameplay-heading p{font-size:17px}
+.gameplay-heading .btn{flex-shrink:0}
+.gameplay-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.gameplay-preview{background:#f2f9ff;border-radius:21px;overflow:hidden;padding-bottom:16px}
+.puzzle-feature .gameplay-preview{background:#fff3fb}
+.gameplay-preview img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.gameplay-preview h4{font:700 21px var(--display);color:var(--navy);margin:14px 15px 7px}
+.gameplay-preview p{font-size:15px;line-height:1.5;margin:0 15px;color:var(--ink)}
+.gameplay-note{margin-top:18px;padding:13px 18px;border-radius:16px;background:#fff5da;color:#604418;font-weight:700;font-size:15px}
+@media(max-width:900px){.gameplay-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.gameplay-feature{padding:16px}.gameplay-heading{flex-direction:column;align-items:flex-start}.gameplay-gallery{gap:10px}.gameplay-preview h4{font-size:18px;margin:10px 10px 5px}.gameplay-preview p{font-size:13px;margin:0 10px}}
