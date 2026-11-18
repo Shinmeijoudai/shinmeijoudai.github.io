@@ -1,7 +1,7 @@
 # Momo Kids Lab Privacy Policy
 
 **Effective Date: October 27, 2026**
-**Last Updated: November 16, 2026**
+**Last Updated: November 18, 2026**
 
 ## About Momo Kids Lab
 
@@ -71,7 +71,7 @@ Parents and guardians are encouraged to supervise their children's use of mobile
 
 ## Character Voices, Music, and Sounds
 
-Our Games may include prerecorded character voices, such as Momo's voice, as well as background music and sound effects. These come inside the Game. Momo's voice is based on the voice of the creator of Momo Kids Lab and was created with AI voice tools. Our Games do not record, collect, or store players' voices, and they do not use the microphone.
+Our Games may include prerecorded character voices, such as Momo's voice, as well as background music and sound effects. These come inside the Game. Some Momo Kids Lab games include Momo's voice: prerecorded audio made with AI voice tools. Nothing is recorded from your child — the games never use the microphone or collect anyone's voice. Our Games do not record, collect, or store players' voices, and they do not use the microphone.
 
 ## Third-Party Platforms
 
