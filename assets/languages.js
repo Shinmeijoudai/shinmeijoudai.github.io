@@ -1,9 +1,9 @@
 const translations = {
 "Little adventures.": {"es":"Pequeñas aventuras.","th":"ผจญภัยเล็ก ๆ","zh-CN":"小小冒险。"},
 "Big discoveries.": {"es":"Grandes descubrimientos.","th":"ค้นพบสิ่งยิ่งใหญ่","zh-CN":"大大发现。"},
-"Hi, we’re Momo & Bibi!": {"es":"¡Hola, somos Momo y Bibi!","th":"สวัสดี เราคือโมโม่และบิบิ!","zh-CN":"你好，我们是 Momo 和 Bibi！"},
+"Hi, we’re Momo & Bibi!": {"es":"¡Hola, somos Momo y Bibi!","th":"สวัสดี เราคือโมโม่และบีบี้!","zh-CN":"你好，我们是 Momo 和 Bibi！"},
 "Little adventures. Big discoveries.": {"es":"Pequeñas aventuras. Grandes descubrimientos.","th":"ผจญภัยเล็ก ๆ ค้นพบสิ่งยิ่งใหญ่","zh-CN":"小小冒险，大大发现。"},
-"Join curious Momo and her playful friend Bibi as they explore colorful worlds filled with numbers, puzzles, and little challenges. Each adventure encourages your child to think, solve problems, and build confidence at their own pace.": {"es":"Acompaña a la curiosa Momo y a su juguetón amigo Bibi mientras exploran mundos llenos de color, números, puzles y pequeños retos. Cada aventura anima a tu peque a pensar, resolver problemas y ganar confianza a su propio ritmo.","th":"ร่วมสำรวจโลกสีสันสดใสที่เต็มไปด้วยตัวเลข ปริศนา และความท้าทายเล็ก ๆ กับโมโม่ผู้ช่างสงสัยและบิบิเพื่อนจอมซน ทุกการผจญภัยชวนให้ลูกฝึกคิด แก้ปัญหา และสร้างความมั่นใจตามจังหวะของตัวเอง","zh-CN":"和充满好奇心的 Momo 及她活泼的朋友 Bibi 一起，探索充满数字、拼图和小挑战的缤纷世界。每次冒险都鼓励孩子思考、解决问题，并按自己的节奏建立自信。"},
+"Join curious Momo and her playful friend Bibi as they explore colorful worlds filled with numbers, puzzles, and little challenges. Each adventure encourages your child to think, solve problems, and build confidence at their own pace.": {"es":"Acompaña a la curiosa Momo y a su juguetón amigo Bibi mientras exploran mundos llenos de color, números, puzles y pequeños retos. Cada aventura anima a tu peque a pensar, resolver problemas y ganar confianza a su propio ritmo.","th":"ร่วมสำรวจโลกสีสันสดใสที่เต็มไปด้วยตัวเลข ปริศนา และความท้าทายเล็ก ๆ กับโมโม่ผู้ช่างสงสัยและบีบี้เพื่อนจอมซน ทุกการผจญภัยชวนให้ลูกฝึกคิด แก้ปัญหา และสร้างความมั่นใจตามจังหวะของตัวเอง","zh-CN":"和充满好奇心的 Momo 及她活泼的朋友 Bibi 一起，探索充满数字、拼图和小挑战的缤纷世界。每次冒险都鼓励孩子思考、解决问题，并按自己的节奏建立自信。"},
 "Made for little learners and peace of mind for parents:": {"es":"Pensado para que los peques aprendan y las familias estén tranquilas:","th":"สร้างมาเพื่อการเรียนรู้ของเด็ก ๆ และความสบายใจของผู้ปกครอง:","zh-CN":"为小小学习者而设计，让家长更安心："},
 "offline play, no ads, no subscriptions, and no pressure.": {"es":"juego sin conexión, sin anuncios, sin suscripciones y sin presión.","th":"เล่นออฟไลน์ ไม่มีโฆษณา ไม่มีค่าสมาชิกรายเดือน และไม่มีความกดดัน","zh-CN":"离线游玩，无广告，无订阅，无压力。"},
 "Just playful moments to explore, learn, and grow.": {"es":"Solo momentos divertidos para explorar, aprender y crecer.","th":"มีเพียงช่วงเวลาสนุก ๆ ให้สำรวจ เรียนรู้ และเติบโต","zh-CN":"在快乐时光中探索、学习、成长。"},
@@ -184,7 +184,7 @@ const translations = {
   },
   "Solve gentle puzzles with Momo and Bibi across five magical worlds — Forest, Ocean, Candy, Dinosaur and Space — and unlock hats for Momo's closet and furniture for her room.": {
     "es": "Resuelve puzles con Momo y Bibi en cinco mundos mágicos: bosque, océano, dulces, dinosaurios y espacio. Desbloquea sombreros y muebles para Momo.",
-    "th": "ไขปริศนากับโมโม่และบิบิในห้าโลกมหัศจรรย์ ได้แก่ ป่า มหาสมุทร ขนม ไดโนเสาร์ และอวกาศ พร้อมปลดล็อกหมวกและเฟอร์นิเจอร์ให้โมโม่",
+    "th": "ไขปริศนากับโมโม่และบีบี้ในห้าโลกมหัศจรรย์ ได้แก่ ป่า มหาสมุทร ขนม ไดโนเสาร์ และอวกาศ พร้อมปลดล็อกหมวกและเฟอร์นิเจอร์ให้โมโม่",
     "zh-CN": "与 Momo 和 Bibi 在森林、海洋、糖果、恐龙和太空五个奇妙世界中解谜，解锁 Momo 的帽子和房间家具。"
   },
   "Logic": {
@@ -219,7 +219,7 @@ const translations = {
   },
   "Cook with Momo and Bibi across six tasty worlds, from Sunny Snacktown to Sugarcloud Kingdom. Pick the right ingredients, tap COOK! at just the right moment and fill Momo's cookbook with 60 recipes.": {
     "es": "Cocina con Momo y Bibi en seis mundos deliciosos, desde Sunny Snacktown hasta Sugarcloud Kingdom. Elige ingredientes, toca ¡COCINAR! en el momento justo y completa el recetario con 60 recetas.",
-    "th": "ทำอาหารกับโมโม่และบิบิในหกโลกแสนอร่อย ตั้งแต่ Sunny Snacktown ถึง Sugarcloud Kingdom เลือกวัตถุดิบให้ถูก กดทำอาหารให้ตรงจังหวะ และสะสมให้ครบ 60 สูตร",
+    "th": "ทำอาหารกับโมโม่และบีบี้ในหกโลกแสนอร่อย ตั้งแต่ Sunny Snacktown ถึง Sugarcloud Kingdom เลือกวัตถุดิบให้ถูก กดทำอาหารให้ตรงจังหวะ และสะสมให้ครบ 60 สูตร",
     "zh-CN": "与 Momo 和 Bibi 探索六个美食世界，从 Sunny Snacktown 到 Sugarcloud Kingdom。选对食材，在恰当时机点击烹饪，收集 60 道食谱。"
   },
   "Following steps": {
@@ -244,7 +244,7 @@ const translations = {
   },
   "Put together cheerful picture jigsaws with Momo and Bibi in 10 dreamy worlds, from Animal Garden and ABC World to Ocean and Puzzle Master. Hints and peeks are always there, with no timers.": {
     "es": "Completa alegres rompecabezas con Momo y Bibi en 10 mundos de ensueño, desde Animal Garden y ABC World hasta Ocean y Puzzle Master. Siempre hay pistas y vistas previas, sin cronómetros.",
-    "th": "ต่อจิ๊กซอว์ภาพสดใสกับโมโม่และบิบิใน 10 โลกแห่งความฝัน ตั้งแต่สวนสัตว์และโลก ABC ไปจนถึงมหาสมุทรและเซียนจิ๊กซอว์ มีคำใบ้และภาพตัวอย่างให้ดูเสมอ โดยไม่จับเวลา",
+    "th": "ต่อจิ๊กซอว์ภาพสดใสกับโมโม่และบีบี้ใน 10 โลกแห่งความฝัน ตั้งแต่สวนสัตว์และโลก ABC ไปจนถึงมหาสมุทรและเซียนจิ๊กซอว์ มีคำใบ้และภาพตัวอย่างให้ดูเสมอ โดยไม่จับเวลา",
     "zh-CN": "与 Momo 和 Bibi 在 10 个梦幻世界里拼出欢乐图画，从动物花园和 ABC 世界，到海洋与拼图大师。随时可用提示和预览，没有计时器。"
   },
   "Jigsaw puzzles": {
@@ -339,7 +339,7 @@ const translations = {
   },
   "Buddy star": {
     "es": "Estrella de Bibi",
-    "th": "ดาวของบิบิ",
+    "th": "ดาวของบีบี้",
     "zh-CN": "伙伴星星"
   },
   "Headphones": {
