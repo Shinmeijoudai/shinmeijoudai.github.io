@@ -302,3 +302,6 @@ body.beta-open{overflow:hidden}
 .gameplay-note{margin-top:18px;padding:13px 18px;border-radius:16px;background:#fff5da;color:#604418;font-weight:700;font-size:15px}
 @media(max-width:900px){.gameplay-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.gameplay-feature{padding:16px}.gameplay-heading{flex-direction:column;align-items:flex-start}.gameplay-gallery{gap:10px}.gameplay-preview h4{font-size:18px;margin:10px 10px 5px}.gameplay-preview p{font-size:13px;margin:0 10px}}
+
+/* Official Google Play artwork: preserve original proportions and clear space. */
+.play-platform{display:flex;align-items:center;gap:12px}.google-play-badge{display:inline-flex;line-height:0;flex-shrink:0}.google-play-badge img{display:block;width:194px;height:auto;object-fit:contain}.google-play-badge:focus-visible{outline:3px solid #ff9800;outline-offset:3px;border-radius:10px}.hero-copy-inner>.play-platform{margin-top:6px}.card-body>.play-platform{margin-top:0}
