@@ -504,7 +504,7 @@ const translations = {
   const nodes = [];
   while (walker.nextNode()) {
     const node = walker.currentNode;
-    if (node.parentElement.closest('script,style,select,.language-picker')) continue;
+    if (node.parentElement.closest('script,style,select,.language-picker,.pop-dialog,.pop-reopen')) continue;
     const original = node.nodeValue;
     const key = original.trim();
     if (translations[key]) nodes.push({node, original, key});
