@@ -52,6 +52,7 @@
     dialog.showModal();
     document.body.classList.add('pop-open');
     if (!state.shownAt) state.shownAt = Date.now();
+    if (window.MomoSprites) setTimeout(function () { window.MomoSprites.act(dialog, 'wave'); }, 350);
     try { sessionStorage.setItem('momo-register-pop-seen', '1'); } catch (_) {}
   }
   function close() {
@@ -177,6 +178,7 @@
       if (data && data.ok) {
         state.result = { email: d.email, ageGroups: d.ageGroups, game: d.game, updated: !!data.updated, notification: data.notification };
         renderDone(true);
+        if (window.MomoSprites) window.MomoSprites.act(dialog, 'cheer');
         return;
       }
       var code = data && data.error;

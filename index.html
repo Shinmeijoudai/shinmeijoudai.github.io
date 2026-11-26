@@ -230,7 +230,13 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
           momokidslab@gmail.com</a>
       </div>
-      <div class="contact-art"><img src="assets/img/momo-friends.webp" alt="Momo waves hello next to her smiling blue buddy" loading="lazy"></div>
+      <div class="contact-art">
+      <div class="duo" data-duo="greet" role="img" aria-label="Momo waves hello next to her best friend Bibi">
+        <span class="duo-ground" aria-hidden="true"></span>
+        <div class="sprite sprite-momo" data-sprite="momo"><img src="assets/img/sprites/momo-idle.webp" width="360" height="638" alt="" loading="lazy" decoding="async"></div>
+        <div class="sprite sprite-bibi" data-sprite="bibi"><img src="assets/img/sprites/bibi-idle.webp" width="260" height="348" alt="" loading="lazy" decoding="async"></div>
+      </div>
+      </div>
     </div>
   </div>
 </section>
@@ -269,7 +275,11 @@ document.querySelectorAll('.outfit').forEach(function (btn) {
     <button class="pop-close" type="button" data-pop-close aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <div class="pop-hero" aria-hidden="true">
       <span class="pop-glow"></span>
-      <img class="pop-art" src="assets/img/beta-invite-art.webp" width="768" height="512" alt="" loading="lazy">
+      <div class="duo" data-duo="pop" aria-hidden="true">
+        <span class="duo-ground" aria-hidden="true"></span>
+        <div class="sprite sprite-momo" data-sprite="momo"><img src="assets/img/sprites/momo-idle.webp" width="360" height="638" alt="" loading="lazy" decoding="async"></div>
+        <div class="sprite sprite-bibi" data-sprite="bibi"><img src="assets/img/sprites/bibi-idle.webp" width="260" height="348" alt="" loading="lazy" decoding="async"></div>
+      </div>
     </div>
     <div class="pop-body">
       <div id="pop-form-panel">
@@ -347,7 +357,8 @@ document.querySelectorAll('.outfit').forEach(function (btn) {
 </dialog>
 <button class="pop-reopen btn-glow" type="button" id="register-reopen" aria-haspopup="dialog">Join the beta · Limited spots</button>
 <script src="assets/register-popup-text.js?v=20261126-immersive" defer></script>
-<script src="assets/register-popup.js?v=20261126-immersive" defer></script>
+<script src="assets/sprites.js?v=20261126-sprites" defer></script>
+<script src="assets/register-popup.js?v=20261126-sprites" defer></script>
 
 
 <script>

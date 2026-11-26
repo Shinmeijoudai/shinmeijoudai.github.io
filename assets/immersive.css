@@ -103,8 +103,7 @@ body.pop-open{overflow:hidden}
   animation:fx-breathe 4s ease-in-out infinite}
 .pop-glow{position:absolute;left:50%;top:58%;width:80%;height:110%;transform:translate(-50%,-50%);border-radius:50%;
   background:radial-gradient(closest-side,rgba(255,240,190,.95),rgba(255,240,190,0));animation:fx-breathe 5s ease-in-out infinite}
-/* The artwork sits still on its cloud; only the glow behind it breathes. */
-.pop-art{position:absolute;left:50%;bottom:-6%;height:118%;width:auto;max-width:none;transform:translateX(-50%)}
+
 .pop-body{overflow-y:auto;overscroll-behavior:contain;padding:6px 30px 26px;text-align:left}
 #pop-form-panel>.pop-badge,#pop-form-panel>h2,#pop-form-panel>.pop-desc,#pop-form-panel>.pop-offer{text-align:center}
 .pop-badge{display:block;width:max-content;max-width:100%;margin:0 auto;background:#fff0ca;color:#85450b;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 14px;border-radius:999px}
@@ -180,3 +179,20 @@ body.pop-open .pop-reopen{visibility:hidden}
   .reveal-on .reveal{opacity:1!important;transform:none!important}
   .btn:hover,.btn:active,.pop-close:hover{transform:none}
 }
+
+/* ---------- Momo & Bibi frame sprites ----------
+   Poses are stacked in one spot and swapped; the characters stay planted. */
+.duo{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:0}
+.sprite{position:relative;flex:0 0 auto}
+.sprite img{display:block;width:100%;height:auto}
+.sprite img:not(:first-child){position:absolute;left:0;top:0}
+.sprite img:not(.on){visibility:hidden}
+.sprite-momo{width:var(--momo-w,150px);z-index:1}
+.sprite-bibi{width:calc(var(--momo-w,150px)*.56);margin-left:calc(var(--momo-w,150px)*-.12);margin-bottom:calc(var(--momo-w,150px)*.02)}
+.duo-ground{position:absolute;left:50%;bottom:calc(var(--momo-w,150px)*-.05);width:calc(var(--momo-w,150px)*2.1);height:calc(var(--momo-w,150px)*.32);transform:translateX(-50%);border-radius:50%;
+  background:radial-gradient(closest-side,rgba(255,255,255,.95),rgba(255,255,255,.75) 60%,rgba(255,255,255,0));pointer-events:none}
+/* Pop-up header: Momo and Bibi stand on a soft cloud. */
+.pop-hero .duo{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);--momo-w:clamp(86px,15vh,122px)}
+/* Contact section: on a little grassy hill. */
+.contact-art .duo{--momo-w:clamp(130px,16vw,190px);padding-bottom:14px}
+.contact-art .duo-ground{background:radial-gradient(closest-side,#bfe6a8,#a6d98b 55%,rgba(166,217,139,0));height:calc(var(--momo-w)*.36)}
