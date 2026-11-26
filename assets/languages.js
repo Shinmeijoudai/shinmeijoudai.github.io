@@ -487,6 +487,11 @@ const translations = {
     "th": "ลงทะเบียนเลย",
     "zh-CN": "立即报名"
   },
+  "Coming soon on the": {
+    "es": "Próximamente en",
+    "th": "เร็ว ๆ นี้บน",
+    "zh-CN": "即将登陆"
+  },
   "Coming soon": {
     "es": "Próximamente",
     "th": "เร็ว ๆ นี้",
