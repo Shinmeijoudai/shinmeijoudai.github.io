@@ -1,0 +1,23 @@
+# --- Security denylist (security/2026-11-26): secrets and private files, never commit ---
+*.p8
+*.p12
+*.pfx
+*.pem
+*.jks
+*.keystore
+*.mobileprovision
+AuthKey/
+AuthKey_*
+key.properties
+keystore.properties
+.env*
+!.env.example
+.dev.vars
+*.map
+Claude outputs/
+# Website only: keep internal docs and data out of the public site
+*.md
+!README.md
+!privacy-policy.md
+*.csv
+*.zip
