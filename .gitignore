@@ -18,6 +18,7 @@ Claude outputs/
 # Website only: keep internal docs and data out of the public site
 *.md
 !README.md
+!MUSIC-LICENSE.md
 !privacy-policy.md
 *.csv
 *.zip

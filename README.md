@@ -34,6 +34,10 @@ https://shinmeijoudai.github.io/momo-yummy-world/privacy-policy.html
 Momo Dreamy Puzzleland link (opens the same policy):
 https://shinmeijoudai.github.io/momo-dreamy-puzzleland/privacy-policy.html
 
+## Music
+
+The homepage plays three songs in a loop: Momo's Happy Little Universe, the Classical Piano Welcome Theme and Momo Theme. They were made by Momo Kids Lab with Suno on a paid plan. Licence, credits, song list and the steps for adding a song: [MUSIC-LICENSE.md](MUSIC-LICENSE.md).
+
 ## Contact
 
 momokidslab@gmail.com

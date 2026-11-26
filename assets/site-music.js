@@ -33,7 +33,7 @@
   group.appendChild(status);
   var music = document.createElement('audio');
   music.id = 'momo-background-music';
-  var playlist = ['assets/audio/momo-happy-little-universe.mp3', 'assets/audio/momo-theme.mp3'];
+  var playlist = ['assets/audio/momo-happy-little-universe.mp3', 'assets/audio/momo-piano-welcome-theme.mp3', 'assets/audio/momo-theme.mp3'];
   var track = 0;
   music.src = playlist[track];
   music.preload = 'auto';
