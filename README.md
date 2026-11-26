@@ -37,3 +37,10 @@ https://shinmeijoudai.github.io/momo-dreamy-puzzleland/privacy-policy.html
 ## Contact
 
 momokidslab@gmail.com
+
+## Immersive layer and registration pop-up
+
+- `assets/immersive.css` / `assets/immersive.js` – hero sunlight, drifting mist, petals and sparkles, foreground depth, glowing buttons and section reveals. Momo's artwork itself is never moved. Motion pauses off screen, is lighter on phones, and is switched off for visitors who prefer reduced motion.
+- `assets/register-popup.js` + `assets/register-popup-text.js` – the Momo & Bibi registration pop-up. It sends the same data as the registration site's form to `https://momo-kids-lab-register.pages.dev/api/register`, so registrations are saved and the notification email still arrives. Form wording in all four languages is copied from the registration site.
+- **Required setting:** in Cloudflare (registration site → Settings → Variables), `ALLOWED_ORIGINS` must include `https://momokidslab.com,https://www.momokidslab.com`. If Turnstile is switched on there, add `momokidslab.com` to the widget's hostnames too. Until then, the pop-up shows a link to the registration page instead.
+- **Blinking and waving:** when separate frames are ready (Momo eyes closed, wave poses, Momo and Bibi cut out on transparent backgrounds), add them to `assets/img/` and they can be layered into the hero without stretching the current image.

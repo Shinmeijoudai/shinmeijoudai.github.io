@@ -1,0 +1,198 @@
+/* Momo Kids Lab — immersive layer: hero light and particles, glowing buttons,
+   section reveals and the registration pop-up. Motion is gentle, paused off
+   screen, lighter on phones, and switched off for reduced-motion users.
+   Momo's artwork itself never moves: only light, mist and particles do. */
+
+/* ---------- Hero layers ---------- */
+.hero{isolation:isolate}
+.hero>.hero-fx{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero>.hero-fx-back{z-index:0}
+.hero>.hero-fade{z-index:0}
+.hero>.hero-fx-front{z-index:0}
+.hero-fx span,.fx-particles i{position:absolute;display:block}
+
+/* Warm sunlight over the castle sky, gently breathing. */
+.fx-sun{right:-8%;top:-22%;width:62vw;height:62vw;max-width:900px;max-height:900px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,248,220,.75) 0%,rgba(255,236,180,.35) 28%,rgba(255,236,180,0) 62%);
+  mix-blend-mode:screen;animation:fx-breathe 9s ease-in-out infinite}
+.fx-rays{right:-20%;top:-60%;width:110vw;height:140vh;opacity:.32;mix-blend-mode:screen;transform-origin:72% 30%;
+  background:repeating-conic-gradient(from 200deg at 72% 30%,rgba(255,255,255,.55) 0deg 3deg,rgba(255,255,255,0) 3deg 11deg);
+  -webkit-mask:radial-gradient(circle at 72% 30%,#000 0,rgba(0,0,0,.6) 25%,transparent 55%);
+          mask:radial-gradient(circle at 72% 30%,#000 0,rgba(0,0,0,.6) 25%,transparent 55%);
+  animation:fx-rays 40s linear infinite}
+/* Soft mist drifting slowly through the clouds on the left. */
+.fx-mist{border-radius:50%;filter:blur(18px);background:radial-gradient(closest-side,rgba(255,255,255,.85),rgba(255,255,255,0));opacity:.65}
+.fx-mist-1{left:-12%;top:18%;width:46vw;height:16vw;animation:fx-drift 46s ease-in-out infinite alternate}
+.fx-mist-2{left:4%;top:55%;width:38vw;height:12vw;opacity:.5;animation:fx-drift 58s ease-in-out -20s infinite alternate-reverse}
+.fx-mist-3{left:22%;bottom:-6%;width:60vw;height:18vw;opacity:.55;animation:fx-drift 64s ease-in-out -8s infinite alternate}
+/* Out-of-focus blossoms in the foreground give depth; they shift with the pointer. */
+.fx-bokeh{border-radius:50%;filter:blur(10px);opacity:.55;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.fx-bokeh-1{right:3%;bottom:4%;width:110px;height:110px;background:radial-gradient(circle,#ffd1e3 0 35%,rgba(255,209,227,0) 70%);transform:translate3d(calc(var(--px,0)*-26px),calc(var(--py,0)*-18px),0)}
+.fx-bokeh-2{right:16%;bottom:-2%;width:70px;height:70px;background:radial-gradient(circle,#fff6c9 0 35%,rgba(255,246,201,0) 70%);opacity:.6;transform:translate3d(calc(var(--px,0)*-18px),calc(var(--py,0)*-12px),0)}
+.fx-bokeh-3{left:40%;top:8%;width:46px;height:46px;background:radial-gradient(circle,#fff 0 35%,rgba(255,255,255,0) 70%);opacity:.45;filter:blur(6px);transform:translate3d(calc(var(--px,0)*12px),calc(var(--py,0)*8px),0)}
+.fx-sun,.fx-rays{translate:calc(var(--px,0)*10px) calc(var(--py,0)*6px)}
+
+/* Petals drift down and across; sparkles twinkle in place. */
+.fx-particles{position:absolute;inset:0}
+.fx-petal{top:-6%;left:var(--x);width:var(--s);height:calc(var(--s)*.72);border-radius:80% 0 60% 40%/70% 0 80% 40%;
+  background:linear-gradient(135deg,var(--c1,#ffe1ec),var(--c2,#ff9fc2));opacity:0;box-shadow:inset -1px -1px 2px rgba(255,255,255,.6);
+  animation:fx-fall var(--d) linear var(--delay) infinite;will-change:transform,opacity}
+.fx-petal.white{--c1:#fff;--c2:#ffe7f1}
+.fx-petal.gold{--c1:#fff7cf;--c2:#ffd76a}
+.fx-spark{left:var(--x);top:var(--y);width:var(--s);height:var(--s);opacity:0;
+  background:radial-gradient(circle,#fff 0 18%,rgba(255,244,200,.9) 30%,rgba(255,244,200,0) 70%);
+  animation:fx-twinkle var(--d) ease-in-out var(--delay) infinite;will-change:transform,opacity}
+.fx-spark::before,.fx-spark::after{content:"";position:absolute;left:50%;top:50%;width:160%;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,rgba(255,255,255,0),#fff,rgba(255,255,255,0));transform:translate(-50%,-50%)}
+.fx-spark::after{transform:translate(-50%,-50%) rotate(90deg)}
+.fx-paused *,.fx-paused{animation-play-state:paused!important}
+
+@keyframes fx-breathe{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+@keyframes fx-rays{to{transform:rotate(360deg)}}
+@keyframes fx-drift{from{transform:translate3d(-4vw,0,0)}to{transform:translate3d(6vw,-1.5vw,0)}}
+@keyframes fx-fall{
+  0%{opacity:0;transform:translate3d(0,0,0) rotate(var(--r))}
+  8%{opacity:var(--o,.9)}
+  50%{transform:translate3d(calc(var(--sway)*.5),55vh,0) rotate(calc(var(--r) + 200deg))}
+  90%{opacity:var(--o,.9)}
+  100%{opacity:0;transform:translate3d(var(--sway),112vh,0) rotate(calc(var(--r) + 420deg))}}
+@keyframes fx-twinkle{0%,100%{opacity:0;transform:scale(.4) rotate(0)}45%{opacity:.95;transform:scale(1) rotate(25deg)}60%{opacity:.8}}
+
+/* ---------- Buttons: gentle glow, lift on hover, press on tap ---------- */
+.btn{position:relative;isolation:isolate;transition:transform .18s cubic-bezier(.2,.7,.2,1),box-shadow .18s,filter .18s;-webkit-tap-highlight-color:transparent}
+.btn:hover{transform:translateY(-3px)}
+.btn-sun:hover{box-shadow:0 7px 0 var(--sun-dark),0 10px 24px rgba(255,166,0,.35)}
+.btn-cloud:hover{box-shadow:0 7px 0 var(--sky-shadow),0 10px 22px rgba(15,59,102,.12)}
+.btn:active{transform:translateY(3px);transition-duration:.06s}
+.btn-sun:active{box-shadow:0 2px 0 var(--sun-dark)}
+.btn-cloud:active{box-shadow:0 2px 0 var(--sky-shadow)}
+/* A soft shine sweeps across sunny buttons on hover. */
+.btn-sun{background-image:linear-gradient(100deg,rgba(255,255,255,0) 35%,rgba(255,255,255,.6) 48%,rgba(255,255,255,0) 62%);background-size:260% 100%;background-position:130% 0;background-repeat:no-repeat;transition:transform .18s cubic-bezier(.2,.7,.2,1),box-shadow .18s,filter .18s,background-position .8s ease}
+.btn-sun:hover{background-position:-30% 0}
+.btn-glow{overflow:visible}
+.btn-glow::before{content:"";position:absolute;z-index:-2;inset:-10px;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(255,196,60,.55),rgba(255,196,60,0));opacity:.35;animation:btn-glow 3.2s ease-in-out infinite}
+@keyframes btn-glow{0%,100%{opacity:.25;transform:scale(.96)}50%{opacity:.75;transform:scale(1.04)}}
+/* ---------- Section reveals ---------- */
+.reveal-on .reveal{opacity:0;transform:translate3d(0,22px,0);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--rd,0s)}
+.reveal-on .reveal.is-in{opacity:1;transform:none}
+
+/* ---------- Registration pop-up ---------- */
+body.pop-open{overflow:hidden}
+.pop-dialog{border:0;padding:0;background:transparent;width:min(560px,calc(100% - 20px));max-width:560px;max-height:calc(100dvh - 20px);overflow:visible;color:var(--ink)}
+.pop-dialog::backdrop{background:radial-gradient(circle at 50% 30%,rgba(255,236,190,.35),rgba(15,59,102,.72));-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.pop-dialog[open]{animation:pop-in .38s cubic-bezier(.2,.9,.25,1.15)}
+.pop-dialog[open]::backdrop{animation:pop-fade .3s ease}
+.pop-dialog.is-closing{animation:pop-out .18s ease forwards}
+@keyframes pop-in{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes pop-out{to{opacity:0;transform:translateY(10px) scale(.97)}}
+@keyframes pop-fade{from{opacity:0}}
+.pop-card{position:relative;display:flex;flex-direction:column;max-height:calc(100dvh - 20px);background:#fffdf7;border-radius:34px;
+  box-shadow:0 0 0 4px #fff,0 0 0 7px #ffd27a,0 24px 60px rgba(11,46,82,.45);overflow:hidden}
+.pop-close{position:absolute;z-index:5;top:12px;right:12px;width:48px;height:48px;border-radius:50%;border:3px solid #fff;
+  background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  box-shadow:0 4px 0 #0b2e52,0 6px 14px rgba(11,46,82,.35);transition:transform .15s}
+.pop-close:hover{transform:rotate(90deg) scale(1.05)}
+.pop-close:active{transform:scale(.94)}
+.pop-close:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.pop-hero{position:relative;flex-shrink:0;height:clamp(150px,30vh,230px);
+  background:linear-gradient(180deg,#bfe6ff 0%,#e7f6ff 70%,#fffdf7 100%);overflow:hidden}
+.pop-hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(4px 4px at 12% 30%,#fff 50%,transparent 51%),radial-gradient(3px 3px at 86% 22%,#fff 50%,transparent 51%),
+  radial-gradient(3px 3px at 72% 62%,#fff 50%,transparent 51%),radial-gradient(5px 5px at 24% 70%,#fff8d0 50%,transparent 51%);
+  animation:fx-breathe 4s ease-in-out infinite}
+.pop-glow{position:absolute;left:50%;top:58%;width:80%;height:110%;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(closest-side,rgba(255,240,190,.95),rgba(255,240,190,0));animation:fx-breathe 5s ease-in-out infinite}
+
+.pop-body{overflow-y:auto;overscroll-behavior:contain;padding:6px 30px 26px;text-align:left}
+#pop-form-panel>.pop-badge,#pop-form-panel>h2,#pop-form-panel>.pop-desc,#pop-form-panel>.pop-offer{text-align:center}
+.pop-badge{display:block;width:max-content;max-width:100%;margin:0 auto;background:#fff0ca;color:#85450b;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 14px;border-radius:999px}
+.pop-dialog h2{font-family:MomoKidsChunky,var(--display);font-size:clamp(26px,5vw,34px);line-height:1.15;margin:10px 0 8px}
+.pop-dialog h2 .t1{color:var(--navy)}.pop-dialog h2 .t2{color:#df7108}
+.pop-desc{white-space:pre-line;font-size:17px;line-height:1.45;color:var(--ink-strong)}
+.pop-offer{margin:10px auto 0;padding:10px 14px;border-radius:16px;background:#e9f7ff;color:#0f5a78;font-weight:700;font-size:15px;line-height:1.45}
+#pop-form{display:flex;flex-direction:column;gap:16px;margin-top:18px}
+.pop-intro{font-size:15px;color:var(--ink)}
+.pop-field{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.pop-field label[for],.pop-field legend{font-weight:800;color:var(--navy);font-size:16px;line-height:1.35;padding:0}
+.pop-help{font-size:14px;color:#4b6683;line-height:1.4}
+.req{color:#c4320a}
+.pop-field input[type=email]{font:inherit;font-size:17px;color:var(--navy);background:#fff;border:2px solid #b8d6ec;border-radius:16px;min-height:52px;padding:10px 16px;width:100%;transition:border-color .15s,box-shadow .15s}
+.pop-field input[type=email]::placeholder{color:#8aa1b8}
+.pop-field input[type=email]:focus{outline:0;border-color:#1e88e5;box-shadow:0 0 0 4px rgba(30,136,229,.2)}
+.pop-chips,.pop-games{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.pop-chips label,.pop-games label{position:relative;display:inline-flex;align-items:center;gap:8px;cursor:pointer;min-height:46px;padding:6px 16px;border-radius:999px;background:#fff;border:2px solid #cfe2f2;font-weight:800;color:var(--navy);transition:border-color .15s,background .15s,transform .15s}
+.pop-games label{border-radius:18px;padding:6px 14px 6px 6px;flex:1 1 150px}
+.pop-games img{width:44px;height:44px;border-radius:12px;object-fit:cover}
+.pop-games .pair{display:inline-flex}.pop-games .pair img{width:32px;height:32px;border-radius:9px}.pop-games .pair img+img{margin-left:-8px;box-shadow:-2px 0 0 #fff}
+.pop-chips input,.pop-games input{position:absolute;opacity:0;width:1px;height:1px}
+.pop-chips label:hover,.pop-games label:hover{border-color:var(--sun);transform:translateY(-1px)}
+.pop-chips label:has(input:checked),.pop-games label:has(input:checked){border-color:var(--sun);background:#fff4d6;box-shadow:0 3px 0 var(--sun-dark)}
+.pop-chips label:has(input:focus-visible),.pop-games label:has(input:focus-visible){outline:3px solid #1e88e5;outline-offset:2px}
+.pop-ack{background:#f4faff;border:2px solid #dcecf8;border-radius:18px;padding:14px 16px}
+.pop-ack h3{font-size:17px;font-family:var(--display)}
+.pop-ack ul{margin:4px 0 0;padding-left:20px;font-size:14px;line-height:1.5;color:var(--ink-strong)}
+.pop-ack li+li{margin-top:4px}
+.pop-ack a{font-size:14px;font-weight:700}
+.pop-check{display:flex;gap:10px;align-items:flex-start;font-weight:800;color:var(--navy);font-size:15px;line-height:1.4;cursor:pointer;margin-top:4px}
+.pop-check input{width:24px;height:24px;flex-shrink:0;margin:0;accent-color:#f59e0b}
+.pop-error{color:#b42318;font-weight:700;font-size:14px}
+.has-error input[type=email],.has-error.pop-ack{border-color:#d93a1f}
+.pop-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.pop-status{background:#fff4e5;border:2px solid #ffc988;border-radius:14px;padding:10px 14px;color:#7a3d00;font-weight:700;font-size:15px;line-height:1.45}
+.pop-status p+p{margin-top:6px}
+.pop-submit{align-self:stretch;justify-content:center;font-size:21px;min-height:56px}
+.pop-submit[aria-busy=true]{filter:saturate(.7);cursor:progress}
+.pop-foot,.pop-note{text-align:center;font-size:13px;color:#4b6683;line-height:1.45;white-space:pre-line}
+.pop-later{display:block;margin:10px auto 0;background:none;border:0;color:#34506e;text-decoration:underline;font:inherit;font-size:15px;min-height:44px;cursor:pointer}
+#pop-done-panel:not([hidden]){display:flex}
+#pop-done-panel{text-align:center;flex-direction:column;gap:12px;padding-top:6px}
+#pop-done-panel h2{color:#df7108}
+.pop-summary{margin:0;text-align:left;background:#f4faff;border-radius:16px;padding:12px 16px;display:flex;flex-direction:column;gap:6px}
+.pop-summary div{display:flex;gap:10px;flex-wrap:wrap}.pop-summary dt{font-weight:800;color:var(--navy);min-width:90px}.pop-summary dd{margin:0;word-break:break-word}
+.pop-updated{color:#0f5a78;font-weight:700}
+.pop-done-actions{display:flex;flex-direction:column;align-items:center;gap:4px}
+.pop-reopen{position:fixed;right:18px;bottom:18px;z-index:15;background:linear-gradient(#ffd255,#ffb020);color:var(--navy);border:3px solid #fff;border-radius:999px;
+  padding:12px 20px;box-shadow:0 5px 0 var(--sun-dark),0 10px 24px rgba(15,59,102,.2);font-family:var(--display);font-size:16px;font-weight:600;cursor:pointer;
+  max-width:calc(100% - 36px);transition:transform .18s cubic-bezier(.2,.7,.2,1)}
+.pop-reopen:hover{transform:translateY(-3px)}
+.pop-reopen:active{transform:translateY(2px)}
+.pop-reopen.btn-glow::before{inset:-12px}
+body.pop-open .pop-reopen{visibility:hidden}
+
+@media (max-width:820px){
+  .fx-rays,.fx-mist-3,.fx-bokeh-3{display:none}
+  .fx-sun{width:120vw;height:120vw;top:auto;bottom:-10%;right:-40%}
+  .fx-mist{filter:blur(12px)}
+}
+@media (max-width:480px){
+  .pop-body{padding:4px 18px 20px}
+  .pop-card{border-radius:26px}
+  .pop-close{top:10px;right:10px}
+  .pop-reopen{font-size:14px;padding:10px 16px;right:12px;bottom:12px}
+}
+@media (max-height:700px){.pop-hero{height:130px}}
+
+/* Reduced motion: no drifting, twinkling, glowing or reveal movement. */
+@media (prefers-reduced-motion:reduce){
+  .fx-particles,.fx-rays,.fx-mist,.fx-bokeh,.btn-glow::before,.pop-hero::before{display:none!important}
+  .reveal-on .reveal{opacity:1!important;transform:none!important}
+  .btn:hover,.btn:active,.pop-close:hover{transform:none}
+}
+
+/* ---------- Momo & Bibi frame sprites ----------
+   Poses are stacked in one spot and swapped; the characters stay planted. */
+.duo{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:0}
+.sprite{position:relative;flex:0 0 auto}
+.sprite img{display:block;width:100%;height:auto}
+.sprite img:not(:first-child){position:absolute;left:0;top:0}
+.sprite img:not(.on){visibility:hidden}
+.sprite-momo{width:var(--momo-w,150px);z-index:1}
+.sprite-bibi{width:calc(var(--momo-w,150px)*.56);margin-left:calc(var(--momo-w,150px)*-.12);margin-bottom:calc(var(--momo-w,150px)*.02)}
+.duo-ground{position:absolute;left:50%;bottom:calc(var(--momo-w,150px)*-.05);width:calc(var(--momo-w,150px)*2.1);height:calc(var(--momo-w,150px)*.32);transform:translateX(-50%);border-radius:50%;
+  background:radial-gradient(closest-side,rgba(255,255,255,.95),rgba(255,255,255,.75) 60%,rgba(255,255,255,0));pointer-events:none}
+/* Pop-up header: Momo and Bibi stand on a soft cloud. */
+.pop-hero .duo{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);--momo-w:clamp(86px,15vh,122px)}
+/* Contact section: on a little grassy hill. */
+.contact-art .duo{--momo-w:clamp(130px,16vw,190px);padding-bottom:14px}
+.contact-art .duo-ground{background:radial-gradient(closest-side,#bfe6a8,#a6d98b 55%,rgba(166,217,139,0));height:calc(var(--momo-w)*.36)}
