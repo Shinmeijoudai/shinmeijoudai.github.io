@@ -39,7 +39,7 @@
   music.preload = 'auto';
   music.autoplay = true;
   music.loop = false;
-  music.volume = 0.25;
+  music.volume = 0.12;
   music.muted = false;
   music.setAttribute('aria-hidden','true');
   document.body.appendChild(music);
